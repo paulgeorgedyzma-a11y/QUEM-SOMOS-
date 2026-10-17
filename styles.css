@@ -1,0 +1,480 @@
+:root {
+  color: #0f172a;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+.site-header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: 56px;
+  align-items: center;
+  padding: 0 16px;
+  background: #0011ff;
+  box-shadow: 0 10px 24px rgb(15 23 42 / 12%);
+}
+
+.brand {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 750;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 96px 0 64px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, #0011ff 0%, #000a99 100%);
+}
+
+.hero-content,
+.section-container,
+.footer-content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  display: inline-flex;
+  margin-bottom: 24px;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 12px;
+  background: rgb(255 255 255 / 16%);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 672px;
+  margin: 0 auto 24px;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: rgb(255 255 255 / 85%);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.what-we-do {
+  padding: 64px 0 80px;
+}
+
+.section-intro {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.section-intro h2,
+.why-us h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.section-intro p {
+  max-width: 512px;
+  margin: 12px auto 0;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.service-card,
+.benefit-card {
+  border: 1px solid #f1f2f4;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgb(15 23 42 / 8%);
+}
+
+.service-card {
+  display: flex;
+  min-height: 248px;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.icon-badge {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 auto;
+  margin-bottom: 16px;
+  place-items: center;
+  border-radius: 50%;
+  color: #1010f5;
+  background: #e9eaff;
+}
+
+.icon-badge svg {
+  width: 26px;
+  height: 26px;
+}
+
+.service-card h3 {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.service-card p,
+.benefit-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.625;
+}
+
+.why-us {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.why-us h2 {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 32px;
+}
+
+.benefit-card {
+  min-height: 150px;
+  padding: 24px;
+}
+
+.benefit-card h3 {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.site-footer {
+  border-top: 1px solid #e2e5e9;
+  padding: 48px 0 0;
+  color: #3c4043;
+  background: #f8f9fa;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.85fr) minmax(0, 1fr);
+  gap: 32px 48px;
+  padding-bottom: 40px;
+}
+
+.footer-content > section {
+  min-width: 0;
+}
+
+.footer-brand {
+  margin: 0 0 12px;
+  color: #202124;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1.2;
+}
+
+.footer-brand-dot {
+  color: #1967d2;
+}
+
+.footer-legal-name {
+  max-width: 360px;
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-registration {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-registration > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
+}
+
+.footer-registration dt {
+  font-weight: 600;
+}
+
+.footer-registration dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.footer-heading {
+  margin: 6px 0 16px;
+  color: #202124;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.footer-phone,
+.footer-map,
+.privacy-link {
+  display: inline-block;
+  color: #1967d2;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+
+.footer-phone {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-caption {
+  margin: 8px 0 0;
+  color: #5f6368;
+  font-size: 13px;
+}
+
+.footer-location address {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.85;
+}
+
+.footer-bottom {
+  display: flex;
+  width: calc(100% - 32px);
+  max-width: 1248px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin: 0 auto;
+  border-top: 1px solid #dadce0;
+  padding: 20px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #5f6368;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.footer-phone:hover,
+.footer-map:hover,
+.privacy-link:hover {
+  text-decoration: underline;
+}
+
+.site-footer a:focus-visible {
+  border-radius: 3px;
+  outline: 2px solid #1967d2;
+  outline-offset: 5px;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.privacy-page {
+  padding: 96px 16px 80px;
+  color: #0f172a;
+}
+
+.privacy-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.privacy-content h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.privacy-updated {
+  margin: 8px 0 40px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.privacy-section {
+  margin-top: 32px;
+}
+
+.privacy-section h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.privacy-section p,
+.privacy-section li {
+  color: #64748b;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.privacy-section p {
+  margin: 0;
+}
+
+.privacy-section ul {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+@media (min-width: 640px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 900px) {
+  .footer-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-company {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 639px) {
+  .hero {
+    padding-top: 88px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .section-intro h2,
+  .why-us h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .service-grid,
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-bottom: 32px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-phone,
+  .footer-map,
+  .privacy-link {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .privacy-page {
+    padding-top: 92px;
+  }
+
+  .privacy-content h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
